@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Status Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+        #statusMessage {
+            font-size: 1.5em;
+            color: #333;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Funny Status Generator</h1>
+    <p id="statusMessage">Click the button to generate a funny status!</p>
+    <button onclick="generateStatus()">Generate Status</button>
+
+    <script>
+        const statuses = [
+         "Currently pretending to work.",
+"Running on coffee and bad decisions.",
+"Loading... Please wait forever.",
+"404: Motivation not found.",
+"Caution: Brain under construction.",
+"If lost, return to the couch.",
+"Error: Sarcasm level too high.",
+"Channeling my inner sloth today.",
+"Powered by snacks and daydreams.",
+"Just a Wi-Fi signal in a human body.",
+"Eating my way through life's problems.",
+"Buffering... still not ready for today.",
+"Part-time adult, full-time procrastinator.",
+"When in doubt, nap it out.",
+"Living for snacks and good vibes.",
+"Error: Too many tabs open in my brain.",
+"Professional overthinker at work.",
+"BRB, taking a coffee-powered break.",
+"Lost in a Netflix rabbit hole again.",
+"Ctrl + Alt + Del on this whole day, please.",
+"Why save money when you can buy snacks?",
+"Adulting: I’m just winging it.",
+"My to-do list is crying in the corner.",
+"Powered by iced coffee and questionable choices.",
+"Currently on a mission to avoid responsibilities.",
+"Brain.exe has stopped responding.",
+"Sarcasm is my default mode.",
+"Still waiting for my Hogwarts letter.",
+"Operating on caffeine and hope.",
+"If found, please feed tacos.",
+"Me? Busy? Just emotionally scrolling memes.",
+"Introverting like a pro.",
+"In a committed relationship with my bed.",
+"Today’s forecast: 99% chance of doing nothing.",
+"Living life one snack at a time.",
+"Running on autopilot, send help.",
+"Chaos coordinator, at your service.",
+"Forgot how to human today.",
+"Mentally in 2019, physically in 2024.",
+"Waiting for my Wi-Fi to stop judging me.",
+"Fluent in binge-watching and snack runs.",
+"Professional daydreamer, amateur everything else.",
+"Currently living in my head rent-free.",
+"If sarcasm burned calories, I’d be a supermodel.",
+"Spreading chaos, one typo at a time.",
+"BRB, chasing my nonexistent productivity.",
+"Living on the edge of deadlines and snacks.",
+"Some call it procrastination; I call it creativity.",
+"Who needs sleep when you have anxiety?",
+"Dreaming of vacations I can’t afford.",
+"99% coffee, 1% human.",
+"Overthinking my overthinking.",
+"Out of order, check back later.",
+"The struggle is Netflix real.",
+"Searching for the meaning of brunch.",
+"Pro-level scroller, amateur adult.",
+"Just a potato in disguise.",
+"Typing... but it’s all in my head.",
+"Coffee is my spirit animal.",
+"Main character energy, background character effort.",
+"Caught between naps and ambition.",
+"Caffeine: because adulting is hard.",
+"Mentally checked out, please leave a message.",
+"Rolling my eyes at my own choices.",
+"Laundry: 1, Me: 0.",
+"I blinked, and it’s already 5 PM.",
+"To-do lists are my worst enemy.",
+"Crushing it, but only in video games.",
+"I paused my music for this?",
+"Finding joy in tiny victories, like snacks.",
+"Always running, mostly late.",
+"Just another day in paradise... not.",
+"Unplugged, but still buffering.",
+"Overbooked and under-caffeinated.",
+"Mastering the art of selective hearing.",
+"Life hack: Avoid decisions altogether.",
+"Currently overthinking breakfast choices.",
+"I’m not lazy, just in power-saving mode.",
+"In a complicated relationship with mornings.",
+"My life’s soundtrack is buffering.",
+"Currently recharging via snacks.",
+"Why walk when you can scroll?",
+"Powered by memes and existential dread.",
+"Winging it, professionally.",
+"Lost in a maze of my own thoughts.",
+"Trying to unlock the next level of sleep.",
+"Certified expert at doing nothing.",
+"Dreaming big, napping bigger.",
+"Reality called, I declined.",
+"Accidentally adulting, send help.",
+"BRB, making coffee for my coffee.",
+"Stuck on 'do not disturb' mode.",
+"Living for the weekend vibes.",
+"Please hold, recalculating my life choices.",
+"Powered by Wi-Fi and snack breaks.",
+"If I fits, I sits... on the couch.",
+"Minimal effort, maximum snacking.",
+"Running low on motivation, send tacos.",
+"Multi-tasking: procrastinating and snacking.",
+"A professional at looking busy.",
+"Mentally somewhere tropical, physically in bed.",
+
+            "Currently pretending to work.",
+            "Running on coffee and bad decisions.",
+            "Loading... Please wait forever.",
+            "404: Motivation not found.",
+            "Caution: Brain under construction.",
+            "If lost, return to the couch.",
+            "Error: Sarcasm level too high.",
+            "Channeling my inner sloth today.",
+            "Powered by snacks and daydreams.",
+            "Just a Wi-Fi signal in a human body."
+        ];
+
+        function generateStatus() {
+            const randomIndex = Math.floor(Math.random() * statuses.length);
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = statuses[randomIndex];
+        }
+    </script>
+</body>
+</html>
